@@ -16,6 +16,17 @@
       {
         "command": "wrapmate.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "extension.wrapWithElement",
+        "title": "Wrap with Element"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.wrapWithElement",
+        "key": "ctrl+shift+w",
+        "when": "editorTextFocus && editorLangId == html"
       }
     ]
   },
