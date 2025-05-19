@@ -9,22 +9,23 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [ 
+   "onLanguage:html"  
+],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "wrapmate.helloWorld",
-        "title": "Hello World"
-      },
-      {
         "command": "extension.wrapWithElement",
         "title": "Wrap with Element"
-      }
+      },
+      {      
+        "command": "extension.wrapmate",
+        "title": "wrapmate"}
     ],
     "keybindings": [
       {
-        "command": "extension.wrapWithElement",
+        "command": "extension.wrapmate",
         "key": "ctrl+shift+w",
         "when": "editorTextFocus && editorLangId == html"
       }
