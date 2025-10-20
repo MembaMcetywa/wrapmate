@@ -1,12 +1,34 @@
 {
   "name": "wrapmate",
   "displayName": "WrapMate",
-  "description": "A way to wrap selected markup in a chosen html element",
-  "version": "0.0.1",
+  "description": "Quickly wrap selected HTML text with custom tags - features live preview as you type!",
+  "version": "1.0.0",
+  "publisher": "YOUR-PUBLISHER-ID",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MembaMcetywa/wrapmate"
+  },
+  "bugs": {
+    "url": "https://github.com/MembaMcetywa/wrapmate/issues"
+  },
+  "homepage": "https://github.com/MembaMcetywa/wrapmate#readme",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "keywords": [
+    "html",
+    "wrap",
+    "tags",
+    "productivity",
+    "web development"
+  ],
   "engines": {
     "vscode": "^1.93.0"
   },
   "categories": [
+    "Formatters",
     "Other"
   ],
   "activationEvents": [ 
