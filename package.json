@@ -3,7 +3,7 @@
   "displayName": "WrapMate",
   "description": "Quickly wrap selected HTML text with custom tags - features live preview as you type!",
   "version": "1.0.0",
-  "publisher": "YOUR-PUBLISHER-ID",
+  "publisher": "MembaMcetywa",
   "repository": {
     "type": "git",
     "url": "https://github.com/MembaMcetywa/wrapmate"
@@ -49,6 +49,7 @@
       {
         "command": "extension.wrapmate",
         "key": "ctrl+shift+w",
+        "mac": "cmd+shift+w",
         "when": "editorTextFocus && editorLangId == html"
       }
     ]
