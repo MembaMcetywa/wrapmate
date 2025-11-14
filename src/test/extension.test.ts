@@ -291,11 +291,37 @@ Line 3`;
   test("Multi-language support / Language Activation / Extension should NOT activate for unsupported languages", async () => {
     // Should not work for Python
     await createTestDocument('print("Hello")', "python");
-    const commandAvailable = await isCommandAvailable("extension.wrapmate");
     assert.strictEqual(
       document.languageId,
       "python",
       "Document should be Python"
+    );
+  });
+  test("Multi-language support / Language Activation / Command should be blocked in unsupported file types", async () => {
+    
+    await createTestDocument('print("Hello World")', "python");
+    selectText(0, 7, 0, 18);
+
+    
+    const textBefore = document.getText();
+
+    try {
+      await vscode.commands.executeCommand("extension.wrapmate");
+    } catch (error) {
+      //  fail quietly
+    }
+
+    const textAfter = document.getText();
+
+    assert.strictEqual(
+      textBefore,
+      textAfter,
+      "Text should not be modified in unsupported file types"
+    );
+    assert.strictEqual(
+      document.languageId,
+      "python",
+      "File type should still be Python"
     );
   });
   test("Multi-language support / JSX/React / Should handle JSX single-line content", async () => {
