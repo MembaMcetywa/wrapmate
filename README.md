@@ -13,7 +13,7 @@ WrapMate is a powerful VS Code extension that lets you quickly wrap selected HTM
 ## Usage
 
 1. Select the text you want to wrap in an HTML file
-2. Press `Ctrl+Shift+W` (Windows/Linux) or `Cmd+Shift+W` (Mac)
+2. Press `Ctrl+Shift+W` (Windows/Linux) or `Ctrl+Shift+W` (Mac)
 3. Type the tag name (e.g., `div`, `span`, `section`)
 4. Watch the live preview update as you type
 5. Press `Enter` to apply or `ESC` to cancel
