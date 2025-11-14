@@ -141,6 +141,17 @@ export function activate(context: vscode.ExtensionContext): void {
         return;
       }
 
+      // !blacklist
+      const allowedLanguages = ['html', 'vue', 'javascriptreact', 'typescriptreact'];
+      const currentLanguage = editor.document.languageId;
+
+      if (!allowedLanguages.includes(currentLanguage)) {
+        vscode.window.showWarningMessage(
+          `WrapMate only works in HTML, Vue, JSX, and TSX files. Current file type: ${currentLanguage}`
+        );
+        return;
+      }
+
       //  selection
       const selections: vscode.Selection[] = Array.from(editor.selections);
       if (selections.every(sel => sel.isEmpty)) {

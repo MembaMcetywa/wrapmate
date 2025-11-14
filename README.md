@@ -1,6 +1,6 @@
-# WrapMate - HTML Tag Wrapper for VS Code
+# WrapMate - Tag Wrapper for VS Code
 
-WrapMate is a powerful VS Code extension that lets you quickly wrap selected HTML text with custom tags. It features a **live preview** that shows exactly where your tags will be placed as you type!
+WrapMate is a powerful VS Code extension that lets you quickly wrap selected text with custom tags in HTML, Vue, JSX, and TSX files. It features a **live preview** that shows exactly where your tags will be placed as you type!
 
 ## Features
 
@@ -12,7 +12,7 @@ WrapMate is a powerful VS Code extension that lets you quickly wrap selected HTM
 
 ## Usage
 
-1. Select the text you want to wrap in an HTML file
+1. Select the text you want to wrap in a supported file (HTML, Vue, JSX, or TSX)
 2. Press `Ctrl+Shift+W` (Windows/Linux) or `Cmd+Shift+W` (Mac)
 3. Type the tag name (e.g., `div`, `span`, `section`)
 4. Watch the live preview update as you type
@@ -38,10 +38,16 @@ WrapMate supports wrapping multiple selections at once:
 2. Select different text blocks
 3. Use WrapMate to wrap all selections with the same tag
 
+## Supported File Types
+
+- **HTML** (`.html`)
+- **Vue** (`.vue`) - Works in Vue Single File Components
+- **JSX** (`.jsx`) - Works in React JavaScript files
+- **TSX** (`.tsx`) - Works in React TypeScript files
+
 ## Requirements
 
 - VS Code version 1.93.0 or higher
-- Works with HTML files
 
 ## Keyboard Shortcuts
 
@@ -61,6 +67,14 @@ WrapMate supports wrapping multiple selections at once:
 Please report any issues on our [GitHub repository](https://github.com/MembaMcetywa/wrapmate/issues).
 
 ## Release Notes
+
+### 1.1.0
+
+- ✨ Added support for Vue, JSX, and TSX file types
+- 🔒 Added runtime language validation to prevent execution in unsupported files
+- 🧪 Comprehensive test suite expansion (+670 lines, 40+ test cases)
+- 📋 Enhanced security with three-layer file type control
+- 🚀 Fully backward compatible with 1.0.0
 
 ### 1.0.0
 
