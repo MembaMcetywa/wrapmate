@@ -2,7 +2,7 @@
   "name": "wrapmate",
   "displayName": "WrapMate",
   "description": "Quickly wrap selected text with custom tags in HTML, Vue, JSX, and TSX files - features live preview as you type!",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "MembaMcetywa",
   "repository": {
     "type": "git",
@@ -56,7 +56,7 @@
       {
         "command": "extension.wrapmate",
         "key": "ctrl+shift+w",
-        "mac": "cmd+shift+w",
+        "mac": "ctrl+shift+w",
         "when": "editorTextFocus && (editorLangId == html || editorLangId == vue || editorLangId == javascriptreact || editorLangId == typescriptreact)"
       }
     ]
