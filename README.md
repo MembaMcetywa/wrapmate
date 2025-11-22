@@ -13,10 +13,9 @@ WrapMate is a powerful VS Code extension that lets you quickly wrap selected tex
 ## Usage
 
 1. Select the text you want to wrap in a supported file (HTML, Vue, JSX, or TSX)
-2. Press `Ctrl+Shift+W` (Windows/Linux) or `Cmd+Shift+W` (Mac)
-3. Type the tag name (e.g., `div`, `span`, `section`)
-4. Watch the live preview update as you type
-5. Press `Enter` to apply or `ESC` to cancel
+2. Type the tag name (e.g., `div`, `span`, `section`)
+3. Watch the live preview update as you type
+4. Press `Enter` to apply or `ESC` to cancel
 
 ### Example
 
@@ -49,12 +48,6 @@ WrapMate supports wrapping multiple selections at once:
 
 - VS Code version 1.93.0 or higher
 
-## Keyboard Shortcuts
-
-| Command | Windows/Linux | Mac |
-|---------|--------------|-----|
-| Wrap with Element | `Ctrl+Shift+W` | `Cmd+Shift+W` |
-
 ## Installation
 
 1. Open VS Code
@@ -72,20 +65,7 @@ Please report any issues on our [GitHub repository](https://github.com/MembaMcet
 
 - ✨ Added support for Vue, JSX, and TSX file types
 - 🔒 Added runtime language validation to prevent execution in unsupported files
-- 🧪 Comprehensive test suite expansion (+670 lines, 40+ test cases)
-- 📋 Enhanced security with three-layer file type control
-- 🚀 Fully backward compatible with 1.0.0
 
-### 1.0.0
-
-- Initial release
-- Live preview feature
-- Multi-selection support
-- Visual feedback with decorations
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
